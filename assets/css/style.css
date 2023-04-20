@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    /* font-size: 16px; */
+}
+/**/
+.text-center{
+    text-align: center;
+}
+
+
+
+/**/
+
+.color-cadetblue{
+    color: cadetblue;
+}
+
+.resume-body{
+    margin: 10px 30px;
+}
+
+.text{
+    grid-area: intro-text;
+}
+.photo{
+    grid-area: photo;
+    justify-self: end;
+}
+
+.industry-knowledges{
+    grid-area: industry-knowledges;
+}
+.soft-skills{
+    grid-area: soft-skills;
+    border-left: 2px solid cadetblue;
+    padding-left: 10px;
+}
+
+.col-item {
+    grid-area: col-item;
+    padding-left: 10px;
+}
+
+/* .reference-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "col-item col-item";
+} */
+.reference-body {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    width: 100%;
+    flex-wrap: wrap;
+}
+.reference {
+    width: 50%;
+}
+/* 
+.skills {
+    padding-bottom: -5px;
+    margin-bottom: -5px;
+} */
+
+.resume-body .intro{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "intro-text intro-text intro-text photo";
+}
+
+.name{
+    font-size: 2rem;
+    /* font-size: 20px; */
+}
+.contact .title, .position, .orgation-name, .institution{
+    font-weight: 700;
+}
+
+.block .title{
+    font-size: 1.1rem;
+}
+
+.block.block-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "industry-knowledges soft-skills";
+}
+
+p, ul>li, .contact *, .contact .title{
+    font-size: 0.8rem;
+}
+a, a:hover, a:focus, a:active {
+    /* color: inherit; */
+    color: blue;
+}
+/* a:hover {
+    text-decoration: underline 1px solid cadetblue;
+}
+
+a:active {
+    color: cadetblue;
+} */
+
+.block {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.block:not(:last-child) {
+    border-bottom: 2px solid cadetblue;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+/* div.left {
+    border-right: 1px solid blue;
+} */
