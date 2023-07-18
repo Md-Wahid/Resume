@@ -128,6 +128,49 @@ a:active {
     float: right;
 }
 
+/* .list-inline li {
+    padding-right: 30px;
+    float: left;
+    width: auto;
+    list-style-type: circle;
+ } */
+ .list-inline{
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .list-inline li {
+    padding-right: 30px;
+    float: left;
+    width: auto;
+ }
+
 /* div.left {
     border-right: 1px solid blue;
+} */
+
+.crop{
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background-color: cadetblue;;
+}
+.crop img{
+    position: absolute;
+    left: -133px;
+    top: -96px;
+}
+/* .photo {
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.photo img {
+    width: 400px;
+    height: 300px; 
+    margin: -75px 0 0 -100px;
 } */
