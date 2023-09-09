@@ -149,8 +149,8 @@ a:active {
 } */
 
 .crop{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border: 3px solid black;
     border-radius: 50%;
     overflow: hidden;
@@ -159,8 +159,8 @@ a:active {
 }
 .crop img{
     position: absolute;
-    left: -133px;
-    top: -96px;
+    left: -155px;
+    top: -104px;
 }
 /* .photo {
     width: 200px;
