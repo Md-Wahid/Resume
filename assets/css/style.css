@@ -6,6 +6,9 @@
 .text-center{
     text-align: center;
 }
+.text-justify{
+    text-align: justify;
+}
 
 .d-none{
     display: none !important;
@@ -22,7 +25,7 @@
 }
 
 .resume-body{
-    margin: 10px 30px;
+    margin: 0;
 }
 
 .text{
@@ -174,3 +177,34 @@ a:active {
     height: 300px; 
     margin: -75px 0 0 -100px;
 } */
+
+
+/* @media print {
+    body {
+        font-size: 12pt;
+    }
+    .hide-on-print {
+        display: none;
+    }
+    @page {
+        size: A4;
+        margin: 20mm;
+    }
+}
+ */
+
+@media print {
+    .hide-on-print {
+        display: none;
+    }
+    .print-content {
+        margin-top: 20mm;
+        margin-bottom: 20mm;
+        page-break-before: always; /* Force page break before this element */
+    }
+
+    .print-page {
+        size: A4;
+        margin: 20mm;
+    }
+}

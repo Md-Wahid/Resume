@@ -8,13 +8,15 @@
     <meta name="keywords" content="cv, resume, md. wahid, md-wahid, Resume of Md. Wahid">
     <meta name="description" content="Resume/CV of md. Wahid">
     <meta name="author" content="Md. Wahid">
-    <meta http-equiv="refresh" content="30">
+    <!-- <meta http-equiv="refresh" content="30"> -->
     <title>Resume | Md. Wahid</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <div class="resume-body">
+    <button class="hide-on-print" onclick="saveAsPDF()">Print</button>
+
+<div class="resume-body print-page">
         <div class="block block-1 intro">
             <div class="text">
                 <h1 class="name color-cadetblue">MD. WAHID</h1>
@@ -42,7 +44,7 @@
         </div>
         <div class="block block-2 summary">
             <h2 class="title color-cadetblue">PROFILE</h2>
-            <p class="description">I am pragmatic programmer, adherent to test driven development and enthusiastic about latest technologies and modern software architectures. I believe in integrity and I am cohesive to my team and community. I pursue ownership and credibility of my duties and never afraid to take responsibility of my failure.</p>
+            <p class="description text-justify">I am pragmatic programmer, adherent to test driven development and enthusiastic about latest technologies and modern software architectures. I believe in integrity and I am cohesive to my team and community. I pursue ownership and credibility of my duties and never afraid to take responsibility of my failure.</p>
             
         </div>
         <div class="block block-3 skills">
@@ -87,11 +89,38 @@
         <div class="block block-4 work-history">
             <h2 class="title color-cadetblue">Work EXPERIENCE</h2>
             <p class="description">
-                <span class="position">Software Develpper</span> | <span class="duration">03/2022 to
-                    06/2023</span> <br>
-                <span class="orgation-name">UCAS (United Corporate Advisory Services Ltd)- Saiham sky view tower Old bijoy nagar New 195, Shahid Syed Nazrul Islam Sharani</span>
+                <span class="position">Software Engineer</span> | <span class="duration">01/2024 - Present</span> <br>
+                <span class="orgation-name">Systech Digital Limited - House 1, Road 16, Sector 7, Uttara, Dhaka-1230.</span> <br>
+                <strong>Job Location: </strong> icddr,b (International Center for Gastrointestinal Disease Research, Bangladesh - Mohakhali, Dhaka)
             <ul>
+                <li class="text-justify">
+                    <strong>About Systech Digital Limited:</strong> Systech Digital Limited is an ICT solution and service provider company, headquartered in Bangladesh, which translates the vision of the clients into reality. In the last 23 years, we earned experiences and trust from the clients. As a pioneer IT company, we achieved success with a proven track record in providing affordable and quality services to clients. So far we served over 3000 clients in 13 countries, including Canada, the UK, the USA, the Netherlands, Germany, Denmark, and Japan. As part of our global presence, our offices are busy in the UK, Japan as well as in Bangladesh.
+                </li>
                 <li>
+                    <strong>Assigned Project:</strong> <br>
+                    - LIMS (Laboratory Information Management System) for icddr,b (International Center for Gastrointestinal Disease Research, Bangladesh - Mohakhali, Dhaka.)<br>
+                </li>
+                <li>
+                    <strong>Technologies: </strong>C#, Asp.Net Web API, AngularJs., SQL Server.
+                </li>
+                <li>
+                    <strong>Key Role:</strong> <br>
+                    - Contributed to weekly scrum meetings with team updates. <br>
+                    - Created a new or modified existing Stored Procedure. <br>
+                </li>
+                <li>
+                    <strong>Development Task:</strong> <br>
+                    - Developed and deployed new module as customer requirments. <br>
+                    - Finding bugs and fixes them.
+                </li>
+            </ul>
+            </p>
+            <p class="description">
+                <span class="position">Software Develpper</span> | <span class="duration">03/2022 -
+                    06/2023</span> <br>
+                <span class="orgation-name">UCAS (United Corporate Advisory Services Ltd) - Saiham sky view tower Old bijoy nagar New 195, Shahid Syed Nazrul Islam Sharani</span>
+            <ul>
+                <li class="text-justify">
                     <strong>About UCAS:</strong> United Corporate Advisory Services (UCAS) Limited was formed on November 22, 2009 and started its operation from January 2010. The company has expertise in the field of web application and software development, mobile apps development, website development and IT Enabled Service (ITES). They also have core business expertise in the field of IT enabled Services (ITES) with focus on various wings of Capital Market capital market related back office software services. They have the expertise on Holding AGM on virtual Platform Post Issue Management of IPO, data processing related to Rights Share Offer, Bonus and Dividend, Share Management software solution etc.
                 </li>
                 <li>
@@ -119,11 +148,11 @@
             </ul>
             </p>
             <p class="description">
-                <span class="position">Assistant Officer (Jr. Software Developer), Department of IT</span> | <span class="duration">10/2021 to
+                <span class="position">Assistant Officer (Jr. Software Developer), Department of IT</span> | <span class="duration">10/2021 -
                     03/2022</span> <br>
                 <span class="orgation-name">Akij Group Ltd - Akij House, 198 Bir Uttam, Mir Shawkat Sarak, Gulshan Link Road, Tejgaon, Dhaka-1208</span>
             <ul>
-                <li>
+                <li class="text-justify">
                     <strong>About Akij Group:</strong> Akij Group is one of the largest Bangladeshi industrial conglomerates. The industries under this conglomerate include textiles, tobacco, food & beverage, cement, ceramics, printing and packaging, pharmaceuticals, consumer product
                 </li>
                 <li>
@@ -149,11 +178,10 @@
             </ul>
             </p>
             <p class="description">
-                <span class="position">Junior Software Developer</span> | <span class="duration">10/2019 to
-                    11/2020</span> <br>
+                <span class="position">Junior Software Developer</span> | <span class="duration">10/2019 - 11/2020</span> <br>
                 <span class="orgation-name">SoftifyBD Ltd - Hazi Motaleb Plaza, Bandar, Narayanganj</span>
             <ul>
-                <li>
+                <li class="text-justify">
                     <strong>About SoftifyBD:</strong> SoftifyBD specializes in creating ERP (Enterprise Resource Planning) and CMS (Content Management System) softwares.
                 </li>
                 <li>
@@ -182,13 +210,20 @@
             </p>
             
         </div>
-        <div class="block block-5 projects">
+        <div class="block block-5 projects print-content">
             <h2 class="title color-cadetblue">Projects</h2>
             <p class="description">
                 <span style="font-weight: 700;">Probashi Palli (Land CR)</span> <br>
                 <span style="font-weight: 700;">Shopnodhora Holdings Ltd (Land CR)</span> <br>
                 <span style="font-weight: 700;">Shopnodhora Holdings Ltd (Apartment CR)</span> <br>
                 <span style="font-weight: 700;">MMS(Meeting Management System)</span>
+            </p>
+            <p class="description">
+                <h5>LIMS (Laboratory Information Management System).</h5>
+                <ul>
+                    <li><strong>Technologies:</strong> C#, ASP.Net, SQL Server.</li>
+                    <li><strong>Tools:</strong> Visual Studio Community and SSMS (SQL Server Management Studio).</li>
+                </ul>
             </p>
             <p class="description">
                 <h5>EBL Securities Ltd.</h5>
@@ -277,7 +312,7 @@
                 </ul>
             </p>
         </div>
-        <div class="block block-5 competitive-programming">
+        <div class="block block-5 competitive-programming print-content">
             <h2 class="title color-cadetblue">Competitive Programming</h2>
             <p class="description">
             <ul>
@@ -366,6 +401,13 @@
             <!--  -->
         </div>
     </div>
+
+    <script>
+        function saveAsPDF() {
+            if(confirm("Please, select A4 as printing settings for good layout.")) window.print();
+        }
+    </script>
+
 </body>
 
 </html>
