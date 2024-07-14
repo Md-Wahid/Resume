@@ -14,7 +14,11 @@
 </head>
 
 <body>
-    <button class="hide-on-print" onclick="saveAsPDF()">Print</button>
+    <div class="hide-on-print">
+        <button id="prntDflt" class="btn btn-primary">Print Default</button> &nbsp;
+        <button id="prntL2" class="btn btn-secondary">Print Layout 2</button>
+    </div>
+    
 
 <div class="resume-body print-page">
         <div class="block block-1 intro">
@@ -115,7 +119,7 @@
                 </li>
             </ul>
             </p>
-            <p class="description">
+            <p class="description page-break-default page-break-before">
                 <span class="position">Software Develpper</span> | <span class="duration">03/2022 -
                     06/2023</span> <br>
                 <span class="orgation-name">UCAS (United Corporate Advisory Services Ltd) - Saiham sky view tower Old bijoy nagar New 195, Shahid Syed Nazrul Islam Sharani</span>
@@ -211,7 +215,7 @@
             </p>
             
         </div>
-        <div class="block block-5 projects print-content">
+        <div class="block block-5 projects page-break-default page-break-before">
             <h2 class="title color-cadetblue">Projects</h2>
             <p class="description">
                 <h5>LIMS (Laboratory Information Management System).</h5>
@@ -318,7 +322,7 @@
                 </ul>
             </p>
         </div>
-        <div class="block block-5 competitive-programming print-content">
+        <div class="block block-5 competitive-programming page-break-default page-break-before">
             <h2 class="title color-cadetblue">Competitive Programming</h2>
             <p class="description">
             <ul>
@@ -408,11 +412,7 @@
         </div>
     </div>
 
-    <script>
-        function saveAsPDF() {
-            if(confirm("Please, select A4 as printing settings for good layout.")) window.print();
-        }
-    </script>
+    <script src="./assets/scripts/main.js"></script>
 
 </body>
 

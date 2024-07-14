@@ -194,17 +194,27 @@ a:active {
  */
 
 @media print {
+    body {
+        font-size: 12pt;
+    }
     .hide-on-print {
         display: none;
     }
-    .print-content {
-        margin-top: 20mm;
-        margin-bottom: 20mm;
+    .page-break-before {
         page-break-before: always; /* Force page break before this element */
     }
-
-    .print-page {
+    .page-break-after {
+        page-break-after: always; /* Force page break before this element */
+    }
+    
+    /* .print-page {
         size: A4;
         margin: 20mm;
-    }
+    } */
 }
+
+@page  {
+    margin: 0.5in;
+    size: A4; /*or width then height 150mm 50mm*/
+  }
+  
