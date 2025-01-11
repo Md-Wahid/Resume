@@ -101,9 +101,10 @@
     "industry-knowledges soft-skills";
 }
 
-p, ul>li, .contact *, .contact .title{
+p, ul>li, ol>li, .contact *, .contact .title{
     font-size: 0.8rem;
 }
+ol, ul { list-style-position: inside; margin-left: 0; padding-left: 0; }
 a, a:hover, a:focus, a:active {
     /* color: inherit; */
     color: blue;
